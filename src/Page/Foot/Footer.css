@@ -1,0 +1,30 @@
+.foot{         
+       display: flex;
+            justify-content: space-between;
+            align-items:center;
+            height: 10rem; width: 100%;
+            z-index: 10;   
+            transition:  0.5s linear;
+            background-image: url('./foot.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;   
+            padding-top: 2rem;    
+            margin-top: -3rem;
+           
+}
+@media only screen and (max-width: 768px) {
+    .foot{         
+        display: flex;
+             justify-content: space-between;
+             align-items:center;
+             flex-direction: column;
+             min-height: 20rem !important;
+              width: 100%;
+             z-index: 10;   
+             transition:  0.5s linear;
+             background-image: none;
+             background-repeat: no-repeat;   
+             padding-top: 2rem;    
+             background-color: #000;
+ }
+}

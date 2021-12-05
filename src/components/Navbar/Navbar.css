@@ -1,0 +1,226 @@
+ /* Navigation Bar */
+
+
+
+         .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            height: 8rem; width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 10;   
+            transition:  0.5s linear;
+            background-image: url('./navbg.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding-bottom: 1rem;
+        }
+        .navActiveLight{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            height: 7rem; width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            transition:  0.5s linear;
+            background-image: url('./navbg.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding-bottom: .8rem;
+        }
+        .navActiveDark{
+          display: flex;
+          justify-content: space-between;
+          align-items:center;
+          height: 5rem; width: 100%;
+          position: fixed;
+          top: 0;
+          /* font-family: 'Oswald', sans-serif !important ; */
+          background: rgba(229, 229, 229, 0.85);
+          /* opacity: 0.9; */
+          z-index: 10;
+          transition:  0.5s linear;
+      }
+        .Hactive{
+          
+          transition:  0.5s linear;
+          font-size: 1.5rem;
+        }
+        .H{
+      
+          transition:  0.5s linear;
+          font-size: 2rem;
+        }
+        .Logo{
+            width: 17rem;
+            transition:  0.5s linear;
+            margin: 0.8rem 0 0 0;
+        }
+
+        .LogoActive{
+          width: 16rem;
+          transition:  0.5s linear;
+          margin: 0.6rem 0 0 0;
+      }
+
+       
+        .list{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            /* background: aqua; */
+            width: 28rem;
+            text-decoration: none;
+            /* font-size: 1rem !important ; */
+            /* margin-right: 10rem; */
+        }
+ 
+
+          
+          .list * {
+            box-sizing: border-box;
+            transition: all .35s ease;
+         
+            font-weight: bolder;
+          }
+          
+          .list li {
+            display: inline-block;
+            list-style: outside none none;
+            margin: .5em 1em;
+            padding: 0;
+          }
+          
+         
+          .list a {
+            padding: .5em .8em;
+            color: #FFF;
+            position: relative;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 550;
+          }
+          
+          .list a::before,
+          .list a::after {
+            content: '';
+            height: 14px;
+            width: 14px;
+            position: absolute;
+            transition: all .35s ease;
+            opacity: 0;
+          }
+          
+          .list a::before {
+            content: '';
+            right: 0;
+            top: 0;
+            border-top: 3px solid #fbcf2c;
+            border-right: 3px solid #fbcf2c;
+            transform: translate(-100%, 50%);
+          }
+          
+          .list a:after {
+            content: '';
+            left: 0;
+            bottom: 0;
+            border-bottom: 3px solid #fbcf2c;
+            border-left: 3px solid #fbcf2c;
+            transform: translate(100%, -50%)
+          }
+          
+          .list a:hover:before,
+          .list a:hover:after{
+            transform: translate(0,0);
+            opacity: 1;
+          }
+          
+          .list a:hover {
+            color: rgba(241, 92, 48, 1) !important;
+          }
+          
+
+        
+        .container{
+            display: none;
+        }
+        .hamburger{
+            display: none;
+        }
+        @media(max-width: 1800px){
+          .Logo{
+            width: 14rem;
+          }
+          .LogoActive{
+            width: 13rem;
+        }
+        }
+        @media(max-width: 1600px){
+          .Logo{
+            width: 13rem;
+          }
+          .LogoActive{
+            width: 11rem;
+        }
+        }
+
+        @media(max-width: 1500px){
+          .list{
+            width: auto;
+            margin-right: 2rem;
+          }
+          
+        }
+       
+       
+
+        @media(max-width: 1200px){
+            .nav{
+                justify-content: space-between;
+                /* padding-left: 2rem; */
+                height: 5rem;
+                position: fixed;
+                align-items: center;
+                flex-direction: row;
+                width: 100%;
+            }
+            .navActiveLight{
+                justify-content: space-between;
+                /* padding-left: 2rem; */
+                height: 4.8rem;
+                position: fixed;
+                z-index: 10;
+                opacity: 1;
+                flex-direction: row;
+            }
+            .navActiveDark{
+              justify-content: space-between;
+              /* padding-left: 2rem; */
+              height: 4rem;
+              position: fixed;
+              background: rgba(229, 229, 229, 0.85);
+              z-index: 10;
+              opacity: 1;
+              flex-direction: row;
+          }
+            .none{
+                display: none;
+            }
+            
+            .list{
+               display: none;
+            }
+            .Logo{
+              display: none;
+            }
+            .LogoActive{
+              display: none;
+          }
+          .LogoB{
+            width: 8rem;
+            transition:  0.5s linear;
+        }
+        }
+                               /* Navigartion Bar Ends */
